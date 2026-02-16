@@ -58,37 +58,4 @@ export async function POST(request: NextRequest) {
   }
 }
 
-export async function GET_BY_KEY(request: NextRequest) {
-  try {
-    const apiKey = request.headers.get('x-api-key')
-    
-    if (!apiKey) {
-      return NextResponse.json(
-        { success: false, error: 'API key required' },
-        { status: 401 }
-      )
-    }
 
-    const agent = await getAgentByApiKey(apiKey)
-    
-    if (!agent) {
-      return NextResponse.json(
-        { success: false, error: 'Invalid API key' },
-        { status: 401 }
-      )
-    }
-
-    return NextResponse.json({
-      success: true,
-      data: {
-        ...agent,
-        apiKey: undefined,
-      },
-    })
-  } catch (error) {
-    return NextResponse.json(
-      { success: false, error: 'Failed to verify agent' },
-      { status: 500 }
-    )
-  }
-}
