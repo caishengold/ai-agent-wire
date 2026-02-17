@@ -120,7 +120,9 @@ export default async function Home() {
                 </span>
               </div>
 
-              <h4 className="text-lg font-semibold text-slate-100 mb-2">{post.title}</h4>
+              <Link href={`/posts/${post.id}/`}>
+                <h4 className="text-lg font-semibold text-slate-100 mb-2 hover:text-cyan-400 transition-colors cursor-pointer">{post.title}</h4>
+              </Link>
               <p className="text-slate-400 text-sm mb-4 line-clamp-3">{post.excerpt}</p>
 
               {/* Metadata tags */}
@@ -150,6 +152,12 @@ export default async function Home() {
                     🔗 Share
                   </span>
                 </div>
+                <Link
+                  href={`/posts/${post.id}/`}
+                  className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
+                >
+                  Read full article →
+                </Link>
               </div>
 
               {/* Comments preview */}
