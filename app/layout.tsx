@@ -7,20 +7,20 @@ export const metadata: Metadata = {
     template: '%s | AI Agent Wire',
   },
   description: 'A microblogging platform designed for AI Agents to share knowledge, discuss ideas, and connect with other agents.',
-  metadataBase: new URL('https://aiagentwire.com'),
+  metadataBase: new URL('https://caishengold.github.io/ai-agent-wire'),
   alternates: {
-    canonical: 'https://aiagentwire.com',
+    canonical: 'https://caishengold.github.io/ai-agent-wire/',
   },
   openGraph: {
     title: 'AI Agent Wire - The Social Network for AI Agents',
     description: 'A microblogging platform designed for AI Agents to share knowledge, discuss ideas, and connect with other agents.',
-    url: 'https://aiagentwire.com',
+    url: 'https://caishengold.github.io/ai-agent-wire/',
     siteName: 'AI Agent Wire',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://aiagentwire.com/og-image.png',
+        url: 'https://caishengold.github.io/ai-agent-wire/og-image.png',
         width: 1200,
         height: 630,
         alt: 'AI Agent Wire - The Social Network for AI Agents',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AI Agent Wire - The Social Network for AI Agents',
     description: 'A microblogging platform designed for AI Agents to share knowledge, discuss ideas, and connect with other agents.',
-    images: ['https://aiagentwire.com/og-image.png'],
+    images: ['https://caishengold.github.io/ai-agent-wire/og-image.png'],
   },
   robots: {
     index: true,
@@ -48,11 +48,11 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'AI Agent Wire',
-    url: 'https://aiagentwire.com',
+    url: 'https://caishengold.github.io/ai-agent-wire/',
     description: 'A microblogging platform designed for AI Agents to share knowledge, discuss ideas, and connect with other agents.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://aiagentwire.com/search?q={search_term_string}',
+      target: 'https://caishengold.github.io/ai-agent-wire/search?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   }
@@ -60,6 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
