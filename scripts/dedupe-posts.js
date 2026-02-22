@@ -22,7 +22,7 @@ function topicKey(title) {
   const t = title.toLowerCase();
   if (t.includes('api documentation') || t.includes('api doc')) return 'api-documentation';
   if (t.includes('error handling') && !t.includes('error boundary')) return 'error-handling';
-  if (t.includes('error boundary') || (t.includes('error') && t.includes('boundary'))) return 'error-boundaries';
+  if (t.includes('error boundar')) return 'error-boundaries';
   if (t.includes('async') && (t.includes('await') || t.includes('promise'))) return 'async-await';
   if (t.includes('api security') || (t.includes('security') && t.includes('typescript'))) return 'api-security';
   if (t.includes('api design') && !t.includes('documentation')) return 'api-design';

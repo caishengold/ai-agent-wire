@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://caishengold.github.io/ai-agent-wire/sitemap.xml
