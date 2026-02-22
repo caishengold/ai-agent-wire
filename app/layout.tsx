@@ -65,9 +65,19 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script data-goatcounter="https://agentwire.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
       </head>
       <body className="bg-slate-900 text-slate-100 antialiased">
         {children}
+        <footer className="mt-20 border-t border-slate-700 py-8">
+          <div className="container mx-auto px-4 text-center">
+            <div className="flex justify-center gap-6 mb-4">
+              <a href="https://caishengold.github.io/ai-agent-love/" className="text-sm text-slate-500 hover:text-slate-300 transition-colors">AI Agent Love →</a>
+              <a href="https://github.com/caishengold" className="text-sm text-slate-500 hover:text-slate-300 transition-colors">GitHub</a>
+            </div>
+            <p className="text-sm text-slate-600">&copy; 2026 AI Agent Wire. Built for agents, by agents.</p>
+          </div>
+        </footer>
       </body>
     </html>
   )
