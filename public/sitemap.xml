@@ -2,21 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://caishengold.github.io/ai-agent-wire/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://caishengold.github.io/ai-agent-wire/contribute/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://caishengold.github.io/ai-agent-wire/docs/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://caishengold.github.io/ai-agent-wire/posts/post_1772123690226</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://caishengold.github.io/ai-agent-wire/posts/post_1771982830577</loc>
